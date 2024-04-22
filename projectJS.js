@@ -16,21 +16,13 @@ function piInfo()
     goalInput = document.getElementById("goalIn").value;
     valEmail(emailInput)
 }
+   // confirm that an email address has been supplied
+   let email = $(input#email);	
+   // test the text of the email box is a valid email address
+   let mailRE = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$";
+	let validMail = mailRE.test(email.val()); 
+   
 
-//function to validate email
-function valEmail(emailInput){
-    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if(emailInput.value.match(mailformat)){
-        alert("Valid email address!");
-//        document.form1.text1.focus();
-        return true;
-    }
-    else {
-        alert("You have entered an invalid email address!");
-//        document.form1.text1.focus();
-        return false;
-    }
-}
 
 // Days of the Week
 let weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
