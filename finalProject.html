@@ -16,28 +16,97 @@
 </head>
 <body>
     <header>
+        
         <h1><center><i>
             <img src="logomakerproject.png" alt="Perfecty Portioned Fitness presents Build Your Meal Plan" width="400" height="400" title="" />
         </i></center></h1>
         <p id = "personalInfo"><center>
             <print>Name: </print><input type = "text" id = "nameIn" /><br><br>
             <print>Email: </print><input type = "text" id = "emailIn" /><br><br>
-            <print>Goal: </print><input type = "text" id = "goalIn"/><br><br>
-            <input type = "button" id = "piButton" value = "Enter Personal Information">
-            </center>
+            <print>Goal: </print><input type = "text" id = "goalIn"/><br><br><br>
+                        
         </p>
+        <form id = "myForm"></form>
         <p>
-            <thead>
+            <table id = 'mealPlan'>
                 <tr>
-                   <th></th>
-                   <th></th>
-                   <th></th>
-                   <th></th>
-                   <th></th>
-                   <th></th>
+                   <th>Day Of Week  </th>
+                   <th>Breakfast</th>
+                   <th>Morning Snack</th>
+                   <th>Lunch</th>
+                   <th>Afternoon Snack</th>
+                   <th>Dinner</th>
                    <th></th>
                 </tr>
-             </thead>
+                <tr>
+                    <td>Monday</td>
+                    <td><input type = "text" id = "monBrk" /></td>
+                    <td><input type = "text" id = "monMsk" /></td>
+                    <td><input type = "text" id = "monLun" /></td>
+                    <td><input type = "text" id = "monAsk" /></td>
+                    <td><input type = "text" id = "monDin" /></td>
+                    
+                 </tr> 
+                 <tr>
+                    <td>Tuesday</td>
+                    <td><input type = "text" id = "tueBrk" /></td>
+                    <td><input type = "text" id = "tueMsk" /></td>
+                    <td><input type = "text" id = "tueLun" /></td>
+                    <td><input type = "text" id = "tueAsk" /></td>
+                    <td><input type = "text" id = "tueDin" /></td>
+                    
+                 </tr> 
+                 <tr>
+                    <td>Wednesday</td>
+                    <td><input type = "text" id = "wedBrk" /></td>
+                    <td><input type = "text" id = "wedMsk" /></td>
+                    <td><input type = "text" id = "wedLun" /></td>
+                    <td><input type = "text" id = "wedAsk" /></td>
+                    <td><input type = "text" id = "wedDin" /></td>
+                    
+                 </tr> 
+                 <tr>
+                    <td>Thursday</td>
+                    <td><input type = "text" id = "thuBrk" /></td>
+                    <td><input type = "text" id = "thuMsk" /></td>
+                    <td><input type = "text" id = "thuLun" /></td>
+                    <td><input type = "text" id = "thuAsk" /></td>
+                    <td><input type = "text" id = "thuDin" /></td>
+                    
+                 </tr> 
+                 <tr>
+                    <td>Friday</td>
+                    <td><input type = "text" id = "friBrk" /></td>
+                    <td><input type = "text" id = "friMsk" /></td>
+                    <td><input type = "text" id = "friLun" /></td>
+                    <td><input type = "text" id = "friAsk" /></td>
+                    <td><input type = "text" id = "friDin" /></td>
+                    
+                 </tr> 
+                 <tr>
+                    <td>Saturday</td>
+                    <td><input type = "text" id = "satBrk" /></td>
+                    <td><input type = "text" id = "satMsk" /></td>
+                    <td><input type = "text" id = "satLun" /></td>
+                    <td><input type = "text" id = "satAsk" /></td>
+                    <td><input type = "text" id = "satDin" /></td>
+                    
+                 </tr> 
+                 <tr>
+                    <td>Sunday</td>
+                    <td><input type = "text" id = "sunBrk" /></td>
+                    <td><input type = "text" id = "sunMsk" /></td>
+                    <td><input type = "text" id = "sunLun" /></td>
+                    <td><input type = "text" id = "sunAsk" /></td>
+                    <td><input type = "text" id = "sunDin" /></td>
+                    
+                 </tr>                
+             </table>
+            </form>
+             <p>
+             <input type = "button" id = "piButton" value = "Enter Information">
+             <input type="button" value="Clear Meal Plan" onclick="clearForm()">
+             </p>
         </p>
 
 
